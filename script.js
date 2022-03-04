@@ -15,19 +15,20 @@ const adultAge = 65
 const discountAdultAge = (fullPrice * 40) / 100;
 
 
-console.log(fullPrice)
+console.log(fullPrice + ' euro')
 
 
 
 
 if (age < underAge) {
 
-    const finalPrice = toFixed(2)(fullPrice - discountUnderAge);
+    const finalPrice = (fullPrice - discountUnderAge);
+    // finalPrice.toFixed(2);
     // const finalPrice = Math.round ( * 100) / 100;
 
 
-    console.log(discountUnderAge)
-    console.log(finalPrice)
+    console.log(discountUnderAge.toFixed(2) + ' euro')
+    console.log(finalPrice.toFixed(2) + ' euro')
 
 
 }
@@ -36,8 +37,8 @@ if (age < underAge) {
 if (age > adultAge) {
 
     const finalPrice = (fullPrice - discountAdultAge);
-    console.log(discountAdultAge)
-    console.log(finalPrice)
+    console.log(discountAdultAge.toFixed(2) + ' euro')
+    console.log(finalPrice.toFixed(2) + ' euro')
 
 
 }
