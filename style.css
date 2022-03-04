@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color: rgb(129, 85, 85);
+}
+
+.contenitore{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    background-image: url(img/treno.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10%;
+   
+
+}
+
+.titolone{
+margin: auto;
+text-align: center;
+margin-top: 20%;
+color: white;
+}
+
+.genera-prezzo{
+    margin: auto;
+    margin-top: i;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#price{
+    background-color: rgb(129, 85, 85);
+    border-radius: 20px;
+    padding: 30px 30px;
+    font-weight: bold;
+
+}
+
