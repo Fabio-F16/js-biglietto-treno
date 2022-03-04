@@ -22,8 +22,8 @@ console.log(fullPrice)
 
 if (age < underAge) {
 
-    const finalPrice = (fullPrice - discountUnderAge);
-    const finalPrice = (Math.round(finalPrice * 100) / 100);
+    const finalPrice = toFixed(2)(fullPrice - discountUnderAge);
+    // const finalPrice = Math.round ( * 100) / 100;
 
 
     console.log(discountUnderAge)
