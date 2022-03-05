@@ -14,7 +14,7 @@ const adultAge = 66
 
 const discountAdultAge = (fullPrice * 40) / 100;
 
-console.log(fullPrice + ' euro')
+console.log(fullPrice.toFixed(2) + ' euro')
 
 if (isNaN(kmToGo)) {
     // alert('Si accettano solo numeri!');
@@ -29,33 +29,43 @@ if (isNaN(age)) {
 }
 
 
-// if (isNaN(kmToGo)) {
+if (age < underAge) {
+    const finalPrice = (fullPrice - discountUnderAge);
+    console.log(discountUnderAge.toFixed(2) + ' euro')
+    console.log(finalPrice.toFixed(2) + ' euro')
+    document.getElementById('price').innerText = finalPrice.toFixed(2) + 'euro';
+} else if (age > adultAge) {
 
-//     
+    const finalPrice = (fullPrice - discountAdultAge);
+    console.log(discountAdultAge.toFixed(2) + ' euro')
+    console.log(finalPrice.toFixed(2) + ' euro')
+    document.getElementById('price').innerText = finalPrice.toFixed(2) + ' euro';
+
+} if (age) {
+    document.getElementById('price').innerText = fullPrice.toFixed(2) + ' euro';
+
+}
+
+
+// if (age < underAge) {
+
+//     const finalPrice = (fullPrice - discountUnderAge);
+//     console.log(discountUnderAge.toFixed(2) + ' euro')
+//     console.log(finalPrice.toFixed(2) + ' euro')
+//     document.getElementById('price').innerText = finalPrice.toFixed(2) + 'euro';
 // }
 
 
 
 
-if (age < underAge) {
+// if (age > adultAge) {
 
-    const finalPrice = (fullPrice - discountUnderAge);
-    console.log(discountUnderAge.toFixed(2) + ' euro')
-    console.log(finalPrice.toFixed(2) + ' euro')
-    document.getElementById('price').innerText = finalPrice.toFixed(2) + 'euro';
-}
+//     const finalPrice = (fullPrice - discountAdultAge);
+//     console.log(discountAdultAge.toFixed(2) + ' euro')
+//     console.log(finalPrice.toFixed(2) + ' euro')
+//     document.getElementById('price').innerText = finalPrice.toFixed(2);
 
-
-
-
-if (age > adultAge) {
-
-    const finalPrice = (fullPrice - discountAdultAge);
-    console.log(discountAdultAge.toFixed(2) + ' euro')
-    console.log(finalPrice.toFixed(2) + ' euro')
-    document.getElementById('price').innerText = finalPrice.toFixed(2);
-
-}
+// }
 
 
 
