@@ -17,7 +17,7 @@ const discountAdultAge = (fullPrice * 40) / 100;
 console.log(fullPrice + ' euro')
 
 if (isNaN(kmToGo)) {
-    alert('Si accettano solo numeri!');
+    // alert('Si accettano solo numeri!');
     document.getElementById('price').innerText = 'Riaggiornare ed inserire solo numeri!';
     console.log('Riaggiornare ed inserire solo numeri!')
 }
@@ -42,7 +42,7 @@ if (age < underAge) {
     const finalPrice = (fullPrice - discountUnderAge);
     console.log(discountUnderAge.toFixed(2) + ' euro')
     console.log(finalPrice.toFixed(2) + ' euro')
-    document.getElementById('price').innerText = finalPrice.toFixed(2);
+    document.getElementById('price').innerText = finalPrice.toFixed(2) + 'euro';
 }
 
 
