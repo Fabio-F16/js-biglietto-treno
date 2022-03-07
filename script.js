@@ -4,7 +4,7 @@ const kmToGo = parseInt(prompt('Quanti chilometri devi percorrere?'));
 
 const age = parseInt(prompt('Quanti anni hai?'));
 
-const fullPrice = (kmToGo * 0.21)
+const fullPrice = kmToGo * 0.21
 
 const underAge = 18
 
@@ -16,17 +16,28 @@ const discountAdultAge = (fullPrice * 40) / 100;
 
 console.log(fullPrice.toFixed(2) + ' euro')
 
+
+
+
+
 if (isNaN(kmToGo)) {
-    // alert('Si accettano solo numeri!');
+
     document.getElementById('price').innerText = 'Riaggiornare ed inserire solo numeri!';
-    console.log('Riaggiornare ed inserire solo numeri!')
+    console.log('Riaggiornare ed inserire solo numeri!');
 }
 
 
 if (isNaN(age)) {
     document.getElementById('price').innerText = 'Riaggiornare ed inserire solo numeri!';
-    console.log('Riaggiornare ed inserire solo numeri!')
+    console.log('Riaggiornare ed inserire solo numeri!');
 }
+
+
+
+
+
+
+
 
 
 if (age < underAge) {
